@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tabooo.GameActivity">
+
+    <TextView
+        android:id="@+id/round_timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:text="time_left"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageButton
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/taboo_icon_content_description"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"
+        android:src="@drawable/ic_pause_white_48dp"
+        android:tint="#9F9326" />
+
+    <TextView
+        android:id="@+id/turn_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/team_1_hint_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/round_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/turn_text_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/round_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/line_div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/round_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/scores_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line_div">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/total_score_descr_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_score_descr"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/total_score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/round_score_descr_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/round_score_descr"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/round_score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scores_layout"
+        android:padding="30dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/guess_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/taboo_word1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/taboo_word2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/taboo_word3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/taboo_word4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/taboo_word5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/guess_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/taboo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/circle_button_shape"
+            android:contentDescription="@string/taboo_icon_content_description"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:src="@drawable/ic_clear_white_48dp" />
+
+        <ImageButton
+            android:id="@+id/pass_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/circle_button_shape"
+            android:contentDescription="@string/pass_icon_content_description"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:src="@drawable/ic_arrow_forward_white_48dp"
+            />
+
+        <ImageButton
+            android:id="@+id/correct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/circle_button_shape"
+            android:contentDescription="@string/correct_icon_content_description"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:src="@drawable/ic_done_white_48dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

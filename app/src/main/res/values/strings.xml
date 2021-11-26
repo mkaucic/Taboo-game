@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Taboo game</string>
+    <string name="app_title">TABOO</string>
+    <string name="play_button_text">PLAY</string>
+    <string name="settings_select_button_text">SELECT</string>
+    <string name="how_to_play_button_text">HOW TO PLAY</string>
+    <string name="copyright">© 2020 Matija Kaučić</string>
+    <string name="store_icon_content_description">Store</string>
+    <string name="information_icon_content_description">Information</string>
+    <string name="settings_icon_content_description">Settings</string>
+    <string name="taboo_icon_content_description">Taboo</string>
+    <string name="pass_icon_content_description">Pass</string>
+    <string name="correct_icon_content_description">Correct</string>
+    <string name="settings_title">Settings</string>
+    <string name="information_text"></string>
+    <string name="game_settings_title">Game Settings</string>
+    <string name="how_to_play_title">How To Play</string>
+    <string name="store_title">Store</string>
+    <string name="num_rounds_choose_text">Number of Rounds:&#160;</string>
+    <string name="time_in_round_choose_text">Seconds Per Round:&#160;</string>
+    <string name="choose_team_names_text">Team Names</string>
+    <string name="choose_team_name_1_text">Team 1:&#160;</string>
+    <string name="choose_team_name_2_text">Team 2:&#160;</string>
+    <string name="team_1_hint_text">Team 1</string>
+    <string name="team_2_hint_text">Team 2</string>
+    <string name="round_text">Round&#160;</string>
+    <string name="total_score_descr">Total Score</string>
+    <string name="round_score_descr">Round Score</string>
+    <string name="pause_title">PAUSE</string>
+    <string name="resume_text">Resume Game</string>
+    <string name="home_text">HOME</string>
+    <string name="start_turn_text">Start Turn</string>
+    <string name="information_title">Information</string>
+    <string name="information">This app is used for widening your vocabulary in quick and fun way!
+        \n
+        \n<b>Rules</b>:\n
+        \n1. Clue-givers may not use any taboo words, including abbreviations and any part of the taboo word.
+        \n2. Clue-giver may only use speech to prompt his or her teammates; gestures, sounds (e.g. barking), or drawings are not allowed.
+        \n3. Singing is permitted, provided the singer is singing words rather than humming or whistling a tune.
+        \n3. Clue-givers may pass on any card at any time, but the card is then placed in the discard pile.
+        \n4. Clue-giver may give hints which rhyme with a taboo word, or are an abbreviation of a taboo word.
+        \n5. While the clue-giver is prompting the teammates they may make as many guesses as they want with no penalties for wrong guesses.
+        \n
+        \n<b>Scoring</b>:\n
+        \nThe playing team receives one point for each correct guess and one penalty point if "taboo" words are spoken.
+    </string>
+    <string name="how_to_play">
+        \n1.Press play.\n
+        \n2.Choose the number of rounds (from 1 to 15).\n
+        \n3.Choose the number of seconds per round (from 15 to 130).\n
+        \n4.Enter team names, if you do not enter any, the teams will be called Team 1 and Team 2.\n
+        \n5.Press play again.\n
+        \n6.Have fun!\n
+        \nP.S. The difficulty can be changed in the settings!
+    </string>
+    <string name="store">Unfortunately, not yet available in Play Store ! ! !</string>
+    <string name="basic_difficulty">Basic difficulty</string>
+    <string name="intermediate_difficulty">Intermediate difficulty</string>
+</resources>
